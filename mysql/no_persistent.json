@@ -1,9 +1,9 @@
 {
-  "host": "127.0.0.1",
+  "host": "192.168.64.182",
   "port": 3306,
   "database": "test",
-  "user": "root",
-  "password": "",
+  "user": "ajl",
+  "password": "ajl",
   "persistent": false,
   "sql":"SELECT * FROM `news` ORDER BY RAND() LIMIT 15"
 }

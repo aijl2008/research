@@ -19,6 +19,11 @@ $dbh = new PDO(
 
 $stmt = $dbh->prepare($json->sql);
 $stmt->execute();
-while (false !== $result = $stmt->fetch(PDO::FETCH_ASSOC)){
+while (false !== $result = $stmt->fetch(PDO::FETCH_ASSOC)) {
     print_r($result);
 }
+if (isset($_GET['sleep'])) {
+    sleep(intval($_GET['sleep']));
+}
+
+echo 'Ok';

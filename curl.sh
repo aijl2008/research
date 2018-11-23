@@ -1,0 +1,14 @@
+curl -d "applicationId=5bf650a46974ce5763444e63&file=%2Fdata%2Fcode%2Fwebroot%2Fresearch%2Fphp_curl_client.php&line=30&message=%E8%BF%99%E6%98%AF%E7%94%B1php%E6%A8%A1%E6%8B%9F%E7%9A%84%E6%B6%88%E6%81%AF&trace%5B0%5D=%E7%AC%AC1%E8%A1%8C&trace%5B1%5D=%E7%AC%AC2%E8%A1%8C&trace%5B2%5D=%E7%AC%AC3%E8%A1%8C&trace%5B3%5D=%E7%AC%AC4%E8%A1%8C&trace%5B4%5D=%E7%AC%AC5%E8%A1%8C&domain=&server_address=127.0.0.1&request_url=%2Fresearch%2Fphp_curl_client.php&user_agent=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_13_6%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F70.0.3538.110+Safari%2F537.36&referer=&remote_address=127.0.0.1&extra=%7B%22USER%22%3A%22ajl%22%2C%22HOME%22%3A%22%5C%2FUsers%5C%2Fajl%22%2C%22HTTP_ACCEPT_LANGUAGE%22%3A%22zh-CN%2Czh%3Bq%3D0.9%22%2C%22HTTP_ACCEPT_ENCODING%22%3A%22gzip%2C+deflate%2C+br%22%2C%22HTTP_ACCEPT%22%3A%22text%5C%2Fhtml%2Capplication%5C%2Fxhtml%2Bxml%2Capplication%5C%2Fxml%3Bq%3D0.9%2Cimage%5C%2Fwebp%2Cimage%5C%2Fapng%2C%2A%5C%2F%2A%3Bq%3D0.8%22%2C%22HTTP_USER_AGENT%22%3A%22Mozilla%5C%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_13_6%29+AppleWebKit%5C%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%5C%2F70.0.3538.110+Safari%5C%2F537.36%22%2C%22HTTP_UPGRADE_INSECURE_REQUESTS%22%3A%221%22%2C%22HTTP_CACHE_CONTROL%22%3A%22max-age%3D0%22%2C%22HTTP_CONNECTION%22%3A%22keep-alive%22%2C%22HTTP_HOST%22%3A%22127.0.0.1%22%2C%22REDIRECT_STATUS%22%3A%22200%22%2C%22SERVER_NAME%22%3A%22127.0.0.1%22%2C%22SERVER_PORT%22%3A%2280%22%2C%22SERVER_ADDR%22%3A%22127.0.0.1%22%2C%22REMOTE_PORT%22%3A%2253024%22%2C%22REMOTE_ADDR%22%3A%22127.0.0.1%22%2C%22SERVER_SOFTWARE%22%3A%22nginx%5C%2F1.12.2%22%2C%22GATEWAY_INTERFACE%22%3A%22CGI%5C%2F1.1%22%2C%22REQUEST_SCHEME%22%3A%22http%22%2C%22SERVER_PROTOCOL%22%3A%22HTTP%5C%2F1.1%22%2C%22DOCUMENT_ROOT%22%3A%22%5C%2Fdata%5C%2Fwebroot%22%2C%22DOCUMENT_URI%22%3A%22%5C%2Fresearch%5C%2Fphp_curl_client.php%22%2C%22REQUEST_URI%22%3A%22%5C%2Fresearch%5C%2Fphp_curl_client.php%22%2C%22SCRIPT_NAME%22%3A%22%5C%2Fresearch%5C%2Fphp_curl_client.php%22%2C%22CONTENT_LENGTH%22%3A%22%22%2C%22CONTENT_TYPE%22%3A%22%22%2C%22REQUEST_METHOD%22%3A%22GET%22%2C%22QUERY_STRING%22%3A%22%22%2C%22SCRIPT_FILENAME%22%3A%22%5C%2Fdata%5C%2Fwebroot%5C%2Fresearch%5C%2Fphp_curl_client.php%22%2C%22FCGI_ROLE%22%3A%22RESPONDER%22%2C%22PHP_SELF%22%3A%22%5C%2Fresearch%5C%2Fphp_curl_client.php%22%2C%22REQUEST_TIME_FLOAT%22%3A1542874873.483452%2C%22REQUEST_TIME%22%3A1542874873%7DHTTP/1.1 100 Continue" --connect-timeout 0.005 --write-out "
+remote_ip:%{remote_ip}
+http_code:%{http_code}
+http_version:%{http_version}
+http_connect:%{http_connect}
+num_connects:%{num_connects}
+time_namelookup:%{time_namelookup}
+time_connect:%{time_connect}
+time_appconnect:%{time_appconnect}
+time_pretransfer:%{time_pretransfer}
+time_starttransfer:%{time_starttransfer}
+time_pretransfer:%{time_pretransfer}
+time_total:%{time_total}
+" "http://log.artron.net:8888"
