@@ -33,7 +33,7 @@ http.createServer(function (request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
     response.end('Ok');
     var postData = query.stringify({
-        applicationId: "5acf11423447a828de5847c6",
+        applicationId: "5bf650a46974ce5763444e63",
         file: __filename,
         line: __line,
         message: "这是由nodejs模拟的消息",
@@ -49,7 +49,7 @@ http.createServer(function (request, response) {
         extra: query.stringify(request.headers)
     });
 
-    var req = http.request('http://192.168.64.106:8888/api/debug', {
+    var req = http.request('http://192.168.64.182:8888/api/debug', {
         method: "POST",
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',

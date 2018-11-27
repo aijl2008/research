@@ -4,7 +4,7 @@ if (php_sapi_name() != 'cli') {
 }
 $start = microtime(true);
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://192.168.64.103:8888/api/info");
+curl_setopt($ch, CURLOPT_URL, "http://192.168.64.182:8888/api/info");
 curl_setopt($ch, CURLOPT_HEADER, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode(array(
@@ -54,7 +54,7 @@ if ($error) {
     echo substr($output, 0, $info['header_size']);
 }
 curl_close($ch);
-
+print_r($output);
 $end = microtime(true);
 echo "   namelookup_time:" . intval($info['namelookup_time'] * 1000) . PHP_EOL;
 echo "      connect_time:" . intval($info['connect_time'] * 1000) . PHP_EOL;

@@ -9,7 +9,7 @@ let total_time = 0;
 
 let ClientRequest = '';
 new Promise(function (resolve, reject) {
-    ClientRequest = http.request('http://log.artron.net:8888/', {
+    ClientRequest = http.request('http://192.168.64.182:8888/', {
         method: "GET",
         headers: {},
         timeout: 10

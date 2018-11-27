@@ -11,4 +11,4 @@ time_pretransfer:%{time_pretransfer}
 time_starttransfer:%{time_starttransfer}
 time_pretransfer:%{time_pretransfer}
 time_total:%{time_total}
-" "http://log.artron.net:8888"
+" "http://192.168.64.182:8888"

@@ -1,5 +1,5 @@
 const http2 = require('http2');
-const client = http2.connect('http://log.artron.net:8888/');
+const client = http2.connect('http://192.168.64.182:8888/');
 client.on('error', (err) => console.error(err));
 
 const req = client.request({ ':path': '/' });
